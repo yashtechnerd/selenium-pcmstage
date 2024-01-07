@@ -37,7 +37,7 @@ public void Facility() throws InterruptedException, IOException {
 		extent = new ExtentReports("C:\\Users\\yashwanth.s\\eclipse-workspace\\java\\src\\main\\Images.html", true);
 		show = extent.startTest("Facility");
 		
-		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver-win64");
+		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
 		//sleep = new WebDriverWait(driver, null);
 		driver.manage().window().maximize();
