@@ -24,7 +24,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 
-public class Java{
+public class Kumar{
 	public static ExtentReports extent;
 	public static ExtentTest show;
 	private static ChromeDriver driver;
