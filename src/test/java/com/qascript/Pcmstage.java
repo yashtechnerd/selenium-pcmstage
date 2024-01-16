@@ -1,5 +1,4 @@
-
-package jenkins;
+package com.qascript
 
 import java.io.File;
 import java.io.IOException;
@@ -23,23 +22,19 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-public class Pcmstage{
+public class pcmstage {
 	public static ExtentReports extent;
 	public static ExtentTest show;
 	private static ChromeDriver driver;
-	//private static WebDriverWait sleep;
 
-
-@Test(priority=1)
-public void Facility() throws InterruptedException, IOException {
-		// TODO Auto-generated method stub
+	@Test
+	public void Login () throws InterruptedException, IOException {
 		extent = new ExtentReports("C:\\Users\\yashwanth.s\\eclipse-workspace\\java\\src\\main\\Images.html", true);
 		show = extent.startTest("Facility");
 		
-		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\yashwanth.s\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("Webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application");
 		driver = new ChromeDriver();
-		//sleep = new WebDriverWait(driver, null);
+		WebDriverWait sleep = new WebDriverWait(driver, null);
 		driver.manage().window().maximize();
 		show.assignAuthor("Jeeva");
 		show.assignCategory("Regression");
@@ -66,7 +61,5 @@ public void Facility() throws InterruptedException, IOException {
 		FileUtils.copyFile(srcfile, Destinationfile);
 		return absolutepath_screen;
 	}	
+
 }
-
-
-
