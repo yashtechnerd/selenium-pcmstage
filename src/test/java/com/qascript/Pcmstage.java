@@ -22,7 +22,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class pcmstage {
+public class Pcmstage {
 	public static ExtentReports extent;
 	public static ExtentTest show;
 	private static ChromeDriver driver;
