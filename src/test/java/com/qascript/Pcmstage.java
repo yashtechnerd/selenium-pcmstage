@@ -1,4 +1,4 @@
-package com.qascript
+package com.qascript;
 
 import java.io.File;
 import java.io.IOException;
